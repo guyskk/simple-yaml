@@ -1,3 +1,4 @@
+# coding:utf-8
 from collections import OrderedDict
 
 import yaml
@@ -28,7 +29,7 @@ class SimpleLoader(yaml.SafeLoader):
         if self.peek() == '@':
             return True
         else:
-            return super().check_plain()
+            return super(SimpleLoader, self).check_plain()
 
 
 def construct_mapping(loader, node):
