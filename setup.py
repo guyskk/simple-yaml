@@ -1,4 +1,9 @@
 # coding:utf-8
+"""
+Simple YAML
+
+Document: https://github.com/guyskk/simple-yaml
+"""
 from setuptools import setup
 
 setup(
